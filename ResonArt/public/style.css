@@ -1,0 +1,282 @@
+body,
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #faa275;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+nav a {
+  display: inline-block;
+  margin: 1em;
+}
+
+form div {
+  margin: 1em;
+  display: inline-block;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #faa275;
+}
+
+/* ------------PALETTE------------- */
+
+/* container */
+.palette {
+  /* display: flex;
+  justify-content: center; */
+  /* width: 60vw;
+  height: 40vh; */
+}
+
+/* drawing tool */
+.sketchPad {
+  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+  height: 40vh;
+}
+
+/* control buttons for palette */
+.buttonManifold {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.buttonSpacer {
+  height: 5vh;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid #284b63;
+  height: 24px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+}
+
+.synthButtons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+
+.audioButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+
+.saveButtons {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  font-weight: bold;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* buttons */
+.redButton {
+  /* background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: red;
+  height: 36px;
+  margin: 10px;
+  font-size: 15px; */
+  color: red;
+}
+
+/* .redButton:target {
+  background: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: red;
+  height: 36px;
+  margin: 10px;
+  font-size: 15px;
+} */
+
+.blueButton {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: blue;
+  height: 36px;
+  margin: 2px;
+}
+
+.blackButton {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: black;
+  height: 36px;
+  margin: 2px;
+  font-weight: bold;
+}
+
+.eraserButton {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  height: 36px;
+  margin: 2px;
+  font-weight: bold;
+}
+
+.playButton {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: green;
+  height: 36px;
+  width: 50px;
+  margin: 2px;
+  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+  font-weight: bold;
+}
+
+.stopButton {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: red;
+  height: 36px;
+  width: 50px;
+  margin: 2px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+}
+
+.clearButton {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  height: 36px;
+  width: 50px;
+  margin: 2px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+}
+
+.saveButton {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: black;
+  height: 36px;
+  width: 75px;
+  margin: 2px;
+  font-weight: bold;
+}
+
+.downloadButton {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: black;
+  height: 36px;
+  width: 75px;
+  margin: 2px;
+  font-weight: bold;
+}
+
+.loadButton {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: black;
+  height: 36px;
+  width: 75px;
+  margin: 2px;
+  font-weight: bold;
+}
+
+.scaleButton {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: rgb(107, 32, 228);
+  height: 36px;
+  width: 84px;
+  margin: 2px;
+  font-weight: bold;
+}
+
+/* spacing div to left of palette */
+.spacer {
+  height: 40vh;
+}
+
+/* ------------DRUMS------------- */
+
+/* drums container */
+.drums {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: inherit;
+}
+
+/* bpm slider control */
+.bpmCTRL {
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+}
+
+/* drum machine component */
+.drumMachine {
+  display: flex;
+  justify-content: center;
+  height: 16.666vh;
+  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+}
+
+/* NavBar buttons */
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* List of preset canvases on landing page */
+.presetList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.landingHeader {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
